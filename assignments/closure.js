@@ -3,8 +3,14 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
-
+function add(x, y) {
+  let result = x + y;
+  function outputResult(result) {
+    console.log(`${x} plus ${y} is ${result}.`)
+  }
+  outputResult(result);
+};
+add(1,2);
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
