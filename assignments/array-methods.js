@@ -86,5 +86,5 @@ let sortedDonations = runners.sort((a, b) => (a.donation > b.donation) ? 1 : ((b
 console.log(sortedDonations);
 // Problem 3
 let lastName = [];
-runners.forEach(r => lastName.push(``${r.last_name}.`));
+runners.forEach(r => lastName.push(`${r.last_name}.`));
 console.log(lastName);
